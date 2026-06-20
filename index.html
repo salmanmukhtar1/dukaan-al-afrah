@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>dukaan al'afrah liltaswiq/دكان الأفراح للتسويق</title>
+<title>Shahd Al-Thimar Food Supplies/تموينات شهد الثمار للمواد الغذائية</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -381,8 +381,8 @@ body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--tx);min-hei
     <a href="#" class="logo">
       <div class="logo-box">🛒</div>
       <div class="logo-tx">
-        <div class="ar">دكان الأفراح</div>
-        <div class="en">Dukaan Al Afrah</div>
+        <div class="ar">شهد الثمار</div>
+        <div class="en">Shahd Al Thimar</div>
       </div>
     </a>
     <div class="srch">
@@ -490,7 +490,7 @@ body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--tx);min-hei
   </div>
   <div class="review-card">
     <div class="rev-stars">⭐⭐⭐⭐</div>
-    <div class="rev-text t" data-ar="دكان الأفراح من أفضل البقالات في المدينة، الموظفين محترمين والمنتجات دائماً متوفرة" data-en="Dukaan Al Afrah is one of the best grocery stores in Madinah. Polite staff and products always available.">دكان الأفراح من أفضل البقالات في المدينة</div>
+    <div class="rev-text t" data-ar=" شهد الثمار من أفضل البقالات في المدينة، الموظفين محترمين والمنتجات دائماً متوفرة" data-en="Shahd Al Thimar is one of the best grocery stores in Madinah. Polite staff and products always available."> شهد الثمار من أفضل البقالات في المدينة</div>
     <div class="rev-author"><div class="rev-avatar">👨</div><div><div class="rev-name">محمد العمري</div><div class="rev-date">منذ أسبوعين</div></div></div>
   </div>
 </div>
@@ -502,7 +502,7 @@ body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--tx);min-hei
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-col">
-        <h3 class="t" data-ar="دكان الأفراح للتسويق" data-en="Dukaan Al Afrah">دكان الأفراح للتسويق</h3>
+        <h3 class="t" data-ar="تموينات شهد الثمار للمواد الغذائية" data-en="Shahd Al Thimar">تموينات شهد الثمار للمواد الغذائية</h3>
         <p class="t" data-ar="بقالة متكاملة في قلب المدينة المنورة. مفتوحون 24 ساعة لخدمتكم." data-en="A fully stocked grocery store in the heart of Madinah. Open 24 hours to serve you.">بقالة متكاملة في قلب المدينة المنورة. مفتوحون 24 ساعة لخدمتكم.</p>
         <p>⭐ 4.3 / 74 <span class="t" data-ar="تقييم" data-en="reviews">تقييم</span></p>
       </div>
@@ -521,7 +521,7 @@ body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--tx);min-hei
       </div>
     </div>
     <div class="footer-bottom">
-      © 2025 <span class="t" data-ar="دكان الأفراح للتسويق — المدينة المنورة" data-en="Dukaan Al Afrah — Madinah, Saudi Arabia">دكان الأفراح للتسويق — المدينة المنورة</span>
+      © 2025 <span class="t" data-ar="تموينات شهد الثمار للمواد الغذائية — المدينة المنورة" data-en="Shahd Al Thimar — Madinah, Saudi Arabia">تموينات شهد الثمار للمواد الغذائية — المدينة المنورة</span>
       <!-- SECRET TRIGGER — invisible, only visible on hover. Click opens admin login. -->
       <br><span class="secret-trigger" onclick="openAdmin()" title="">• • •</span>
     </div>
@@ -602,7 +602,7 @@ body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--tx);min-hei
   <!-- DASHBOARD -->
   <div id="admin-dash" style="display:none">
     <div class="admin-header">
-      <div class="admin-logo">🛒 لوحة التحكم — دكان الأفراح <span class="sb-status" id="sb-status"><span class="sb-dot"></span>Supabase</span></div>
+      <div class="admin-logo">🛒 لوحة التحكم — شهد الثمار <span class="sb-status" id="sb-status"><span class="sb-dot"></span>Supabase</span></div>
       <div class="admin-btns">
         <button class="a-logout-btn" onclick="adminLogout()">🚪 خروج</button>
         <button class="a-close-btn" onclick="closeAdmin()">← الموقع</button>
@@ -769,14 +769,14 @@ let adminAuthed=false;
 let currentLang='ar';
 
 /* ═══════════ LOCAL STORAGE (cart, favs, pin, wa) ═══════════ */
-function loadCart(){const s=localStorage.getItem('afrah_cart');return s?JSON.parse(s):{};}
-function saveCartLS(){localStorage.setItem('afrah_cart',JSON.stringify(cart));}
-function loadFavs(){const s=localStorage.getItem('afrah_favs');return s?JSON.parse(s):[];}
-function saveFavsLS(){localStorage.setItem('afrah_favs',JSON.stringify(favs));}
-function getPin(){return localStorage.getItem('afrah_pin')||'1234';}
-function setPin(p){localStorage.setItem('afrah_pin',p);}
-function getWaNumber(){return localStorage.getItem('afrah_wa')||'966500326624';}
-function setWaNumber(n){localStorage.setItem('afrah_wa',n);}
+function loadCart(){const s=localStorage.getItem('shahd_cart');return s?JSON.parse(s):{};}
+function saveCartLS(){localStorage.setItem('shahd_cart',JSON.stringify(cart));}
+function loadFavs(){const s=localStorage.getItem('shahd_favs');return s?JSON.parse(s):[];}
+function saveFavsLS(){localStorage.setItem('shahd_favs',JSON.stringify(favs));}
+function getPin(){return localStorage.getItem('shahd_pin')||'1234';}
+function setPin(p){localStorage.setItem('shahd_pin',p);}
+function getWaNumber(){return localStorage.getItem('shahd_wa')||'966500326624';}
+function setWaNumber(n){localStorage.setItem('shahd_wa',n);}
 
 /* ═══════════ SUPABASE PRODUCT OPS ═══════════ */
 async function loadProductsFromSB(){
@@ -830,7 +830,7 @@ async function loadOrdersFromSB(){
     orders=data||[];
   }catch(e){
     console.warn('Orders load error:',e);
-    orders=JSON.parse(localStorage.getItem('afrah_orders')||'[]');
+    orders=JSON.parse(localStorage.getItem('shahd_orders')||'[]');
   }
 }
 
@@ -840,9 +840,9 @@ async function sbInsertOrder(o){
     await sbFetch('/rest/v1/orders','POST',{id:o.id,customer_name:o.name,phone:o.phone,notes:o.notes||'',items:o.items,total:o.total,status:'received'});
   }catch(e){
     console.warn('Order insert error, saving locally:',e);
-    const local=JSON.parse(localStorage.getItem('afrah_orders')||'[]');
+    const local=JSON.parse(localStorage.getItem('shahd_orders')||'[]');
     local.unshift(localRecord);
-    localStorage.setItem('afrah_orders',JSON.stringify(local));
+    localStorage.setItem('shahd_orders',JSON.stringify(local));
   }
 }
 
@@ -850,9 +850,9 @@ async function sbUpdateOrderStatus(id,status){
   try{await sbFetch('/rest/v1/orders?id=eq.'+id,'PATCH',{status});}
   catch(e){
     console.warn('Order update error:',e);
-    const local=JSON.parse(localStorage.getItem('afrah_orders')||'[]');
+    const local=JSON.parse(localStorage.getItem('shahd_orders')||'[]');
     const idx=local.findIndex(o=>o.id===id);
-    if(idx>-1){local[idx].status=status;localStorage.setItem('afrah_orders',JSON.stringify(local));}
+    if(idx>-1){local[idx].status=status;localStorage.setItem('shahd_orders',JSON.stringify(local));}
   }
 }
 
@@ -1112,7 +1112,7 @@ async function sendWhatsAppOrder(){
   if(items.length===0){showToast(currentLang==='ar'?'السلة فارغة':'Cart is empty',true);return;}
   const total=cartTotal();
   const orderId='ORD-'+Date.now().toString().slice(-6);
-  let msg=`🛒 *طلب جديد من دكان الأفراح*\n\n`;
+  let msg=`🛒 *طلب جديد من شهد الثمار*\n\n`;
   msg+=`📋 رقم الطلب: ${orderId}\n👤 الاسم: ${name}\n📱 الجوال: ${phone}\n\n`;
   msg+=`*المنتجات:*\n`;
   items.forEach(i=>{msg+=`• ${i.name} × ${i.qty} = ${(i.price*i.qty).toFixed(2)} ر.س\n`;});
